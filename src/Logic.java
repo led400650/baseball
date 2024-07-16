@@ -4,22 +4,13 @@ public class Logic {
     PlayerNum playerNum = new PlayerNum();
     Data data = new Data();
 
-    public boolean playgame(){
-        if (data.getStrike() == 3){
-            return false;
-        } else {
-            data.setStrike(0);
-            data.setBall(0);
-        }
-        return true;
-    }
     public void compare(){
+        computerNum.generateNum();
         playerNum.generateNum();
         for(int i=0; i<3; i++){
             if(computerNum.getList().get(i) == playerNum.getList().get(i)){
                 data.addStrike();
-            }
-            else {
+            }else {
                 for(int j=0; j<3; j++){
                     if(computerNum.getList().get(i) == playerNum.getList().get(j)){
                         data.addBall();

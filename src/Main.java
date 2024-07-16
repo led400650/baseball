@@ -3,9 +3,10 @@ public class Main {
 
         Logic logic = new Logic();
 
-        while(logic.playgame()) {
-            logic.compare();
-            logic.print();
+        while (true){
+        logic.compare();
+        logic.print();
         }
+
     }
 }

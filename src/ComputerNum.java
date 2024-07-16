@@ -9,11 +9,6 @@ public class ComputerNum {
         return list;
     }
 
-    public ComputerNum() {
-        generateNum();
-        System.out.println("computerNum.getList() = " + getList());
-    }
-
     public void generateNum() {
         int tmp;
         while(list.size() < 3){
@@ -22,5 +17,6 @@ public class ComputerNum {
                 list.add(tmp);
             }
         }
+        System.out.println("list = " + getList());
     }
 }

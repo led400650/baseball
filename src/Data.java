@@ -1,6 +1,6 @@
 public class Data {
-    private Integer strike = 0;
-    private Integer ball = 0;
+    public Integer strike = 0;
+    public Integer ball = 0;
 
     public void addStrike() {
         strike++;

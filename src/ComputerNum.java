@@ -3,13 +3,14 @@ import java.util.List;
 import java.util.Random;
 
 public class ComputerNum {
-    private List<Integer> list = new ArrayList<>();
-    private Random random = new Random();
+    private final List<Integer> list = new ArrayList<>();
+    private final Random random = new Random();
     public List<Integer> getList() {
         return list;
     }
 
     public void generateNum() {
+        list.clear();
         int tmp;
         while(list.size() < 3){
             tmp = random.nextInt(9)+1;
@@ -18,5 +19,9 @@ public class ComputerNum {
             }
         }
         System.out.println("list = " + getList());
+    }
+
+    public ComputerNum() {
+        generateNum();
     }
 }

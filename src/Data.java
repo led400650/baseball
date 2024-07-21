@@ -1,6 +1,11 @@
 public class Data {
-    public Integer strike = 0;
-    public Integer ball = 0;
+    private Integer strike = 0;
+    private Integer ball = 0;
+
+    public Data() {
+        this.strike = 0;
+        this.ball = 0;
+    }
 
     public void addStrike() {
         strike++;
@@ -12,16 +17,12 @@ public class Data {
     public Integer getStrike() {
         return strike;
     }
-
-    public void setStrike(Integer strike) {
-        this.strike = strike;
-    }
-
     public Integer getBall() {
         return ball;
     }
 
-    public void setBall(Integer ball) {
-        this.ball = ball;
+    public void init() {
+        this.ball = 0;
+        this.strike = 0;
     }
 }
